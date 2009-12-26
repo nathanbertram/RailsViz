@@ -1,0 +1,18 @@
+h1. About RailsViz & Instructions
+
+A simple rake task to visualize models and respective relationships of models in a given Ruby on Rails application using Graphviz. 
+
+# install Graphviz [http://www.graphviz.org/Download.php]
+# sudo gem install ruby-graphviz
+# script/plugin install git://github.com/nathanbertram/RailsViz.git
+# run rake railsviz:models_and_relationships
+
+Enjoy =) Play around with the source as you may be able to find application specific uses.
+
+h2. Resources
+
+# Graphviz Official Website - http://www.graphviz.org/
+# Ruby-Graphviz - http://github.com/glejeune/Ruby-Graphviz/
+# DotLanguage - http://en.wikipedia.org/wiki/DOT_language
+
+Released under the MIT license.
