@@ -2,7 +2,7 @@ namespace :railsviz do
   desc "RailsViz: Visualize models and respective relationships using Graphviz [graphviz.org]"
   task :models_and_relationships => :environment do
     superclasses = [ActiveRecord::Base]
-    file_output = "#{RAILS_ROOT}/tmp/simpleviz_#{Time.now.to_i}.png"
+    file_output = "#{RAILS_ROOT}/tmp/railsviz_#{Time.now.to_i}.png"
     graph = GraphViz::new(:G, :type => :digraph) do |g|
       Dir.glob("#{RAILS_ROOT}/app/models/*rb") do |f|
         klassname = f.match(/\/([a-zA-Z_]+).rb/)[1].camelize
